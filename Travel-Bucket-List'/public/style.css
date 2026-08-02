@@ -1,0 +1,298 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f8fc;
+}
+
+/* ===========================
+   Banner
+=========================== */
+
+.banner{
+    width:100%;
+    height:210px;
+    overflow:hidden;
+}
+
+.banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ===========================
+   Layout
+=========================== */
+
+.container{
+    width:95%;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns:360px 1fr;
+    gap:20px;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.left-card,
+.right-card{
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.left-card{
+    padding:25px;
+}
+
+.right-card{
+    overflow:hidden;
+}
+
+/* ===========================
+   Headings
+=========================== */
+
+.left-card h2,
+.top h2{
+    color:#1d2d50;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.left-card i{
+    color:#2b6ce8;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    border:1px solid #d8dce5;
+    border-radius:10px;
+    padding:14px;
+    font-size:16px;
+    outline:none;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color:#2b6ce8;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+.add-btn{
+    width:100%;
+    margin-top:30px;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#28a745;
+    color:#fff;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.add-btn:hover{
+    background:#23913c;
+}
+
+/* ===========================
+   Right Header
+=========================== */
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px;
+    border-bottom:1px solid #ececec;
+}
+
+.count{
+    background:#2b6ce8;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* ===========================
+   Destination Card
+=========================== */
+
+.destination-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    padding:18px;
+    margin:18px;
+    border-radius:15px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    background:#fff;
+}
+
+.destination-left{
+    display:flex;
+    gap:20px;
+}
+
+.destination-left img{
+    width:240px;
+    height:150px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.destination-info h2{
+    color:#15223f;
+    margin-bottom:10px;
+}
+
+.destination-info h4{
+    color:#2b6ce8;
+    margin-bottom:12px;
+}
+
+.destination-info p{
+    color:#555;
+    line-height:1.5;
+}
+
+/* ===========================
+   Right Actions
+=========================== */
+
+.actions{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    align-items:flex-end;
+}
+
+/* Status */
+
+.badge{
+    padding:10px 18px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.visited{
+    background:#e6f8ea;
+    color:#219653;
+}
+
+.not-visited{
+    background:#fdeaea;
+    color:#d62828;
+}
+
+/* Buttons */
+
+.btn-group{
+    display:flex;
+    gap:10px;
+}
+
+.edit-btn,
+.delete-btn{
+    border:none;
+    color:#fff;
+    cursor:pointer;
+    padding:11px 18px;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.edit-btn{
+    background:#2b6ce8;
+}
+
+.delete-btn{
+    background:#e53935;
+}
+
+.edit-btn:hover{
+    background:#1d5bd8;
+}
+
+.delete-btn:hover{
+    background:#cc2626;
+}
+
+/* ===========================
+   Empty
+=========================== */
+
+.empty{
+    text-align:center;
+    color:#666;
+    padding:50px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:950px){
+
+.container{
+    grid-template-columns:1fr;
+}
+
+.destination-card{
+    flex-direction:column;
+}
+
+.destination-left{
+    flex-direction:column;
+}
+
+.destination-left img{
+    width:100%;
+    height:220px;
+}
+
+.actions{
+    width:100%;
+    align-items:flex-start;
+}
+
+.btn-group{
+    width:100%;
+}
+
+.edit-btn,
+.delete-btn{
+    flex:1;
+}
+
+}
