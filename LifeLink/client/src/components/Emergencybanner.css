@@ -1,0 +1,189 @@
+/* .cta-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: linear-gradient(120deg, #3a0a0a 0%, #6e1414 55%, #8f1c1c 100%);
+  border-radius: 14px;
+  padding: 22px 32px;
+  flex-wrap: wrap;
+}
+
+.cta-text {
+  flex: 1 1 260px;
+  min-width: 220px;
+}
+
+.cta-heading {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.cta-subtext {
+  color: #e8c9c9;
+  font-size: 13px;
+  margin: 0;
+}
+
+.cta-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.cta-button {
+  background: #ffffff;
+  color: #7a1414;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 11px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.cta-illustration {
+  width: 90px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.cta-hand {
+  fill: #e8b48a;
+}
+
+.cta-heart {
+  fill: #e0392b;
+}
+
+@media (max-width: 640px) {
+  .cta-banner {
+    justify-content: center;
+    text-align: center;
+    padding: 24px 20px;
+  }
+
+  .cta-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cta-illustration {
+    display: none;
+  }
+} */
+ /* ===== Emergency Banner Styles ===== */
+
+/* The outer red box */
+.emergency-banner {
+  background-color: #b81e1e;   /* dark red background */
+  color: white;                /* all text inside is white */
+  padding: 16px 24px;
+  border-radius: 10px;
+  display: flex;               /* puts children in a row */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;             /* allows wrapping on small screens */
+  gap: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Left side: icon + text */
+.emergency-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.emergency-icon {
+  font-size: 28px;
+}
+
+.emergency-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.emergency-subtitle {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: #f5d6d6;   /* light pink for the smaller text */
+}
+
+/* Right side: button + phone number */
+.emergency-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.emergency-button {
+  background-color: white;
+  color: #b81e1e;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.emergency-button:hover {
+  background-color: #f0f0f0;
+}
+
+.emergency-divider {
+  width: 1px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.emergency-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.emergency-phone-text p {
+  margin: 0;
+}
+
+.phone-number {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.phone-available {
+  font-size: 12px;
+  color: #f5d6d6;
+}
+
+/* ===== Responsive part: for small screens like mobile ===== */
+@media (max-width: 600px) {
+  .emergency-banner {
+    flex-direction: column;   /* stack top and bottom instead of side by side */
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .emergency-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .emergency-divider {
+    display: none;   /* hide the divider line on mobile, looks cleaner */
+  }
+}

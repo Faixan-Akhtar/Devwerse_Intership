@@ -1,0 +1,148 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 22px;
+  padding: 56px 8px 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 380px;
+  min-width: 280px;
+}
+
+.hero-heading {
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 18px;
+  letter-spacing: -0.5px;
+}
+
+.hero-heading-accent {
+  color: #e0392b;
+}
+
+.hero-subtext {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6b6b6b;
+  margin: 0 0 28px;
+  max-width: 420px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background-color: #e0392b;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(224, 57, 43, 0.25);
+}
+
+.btn-primary:hover {
+  background: #c62e21;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #1a1a1a;
+  border-color: #d8d8d8;
+}
+
+.btn-outline:hover {
+  border-color: #b8b8b8;
+  background: #fafafa;
+}
+
+.hero-media {
+  flex: 1 1 320px;
+  display: flex;
+  justify-content: center;
+  min-width: 260px;
+}
+
+.hero-illustration {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+}
+
+.glow-circle {
+  fill: #fbdedb;
+}
+
+.hand {
+  fill: #f6b593;
+}
+
+.hand-left {
+  transform-origin: center;
+}
+
+.blood-drop {
+  fill: #e0392b;
+}
+
+.drop-cross {
+  fill: #ffffff;
+}
+
+.deco-plus {
+  fill: #e0392b;
+}
+
+.deco-heart {
+  fill: #e0392b;
+}
+
+.deco-heart-sm {
+  opacity: 0.8;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 32px;
+  }
+
+  .hero-heading {
+    font-size: 34px;
+  }
+
+  .hero-subtext {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+}
+
+/* Hero.css */
+/* .hero-btn-primary {
+  background-color: #e0392b;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(224, 57, 43, 0.25);
+} */

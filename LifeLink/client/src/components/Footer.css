@@ -1,0 +1,332 @@
+/* ==========================================================
+   LifeLink Footer — vanilla CSS
+   Tokens match the LifeLink design system.
+   ========================================================== */
+
+.ll-footer {
+  --paper: #F4F0E7;
+  --ink: #1B2440;
+  --ink-soft: #3B4467;
+  --crimson: #C41E3A;
+  --crimson-deep: #8B1128;
+  --line: #DBD2BE;
+  --muted: #736C5C;
+  --white: #FFFDF9;
+
+  /* background: var(--paper); */
+  background-color: white;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  padding: 64px 0 28px;
+}
+
+.ll-footer__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ---------- top: brand + newsletter ---------- */
+
+.ll-footer__top {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--line);
+}
+
+.ll-footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.ll-footer__logo svg {
+  width: 20px;
+  height: 24px;
+}
+
+.ll-footer__tagline {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+  max-width: 320px;
+  margin-bottom: 22px;
+}
+
+.ll-footer__social {
+  display: flex;
+  gap: 10px;
+}
+
+.ll-footer__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  background: var(--white);
+  transition: all 0.2s ease;
+}
+
+.ll-footer__icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ll-footer__icon:hover,
+.ll-footer__icon:focus-visible {
+  background: var(--crimson);
+  border-color: var(--crimson);
+  color: var(--white);
+  outline: none;
+}
+
+.ll-footer__icon:focus-visible {
+  outline: 2px solid var(--crimson-deep);
+  outline-offset: 2px;
+}
+
+.logo{
+display:flex;
+justify-content: center;
+align-items: center;
+margin-top: 14px;
+}
+.logo a {
+  text-decoration: none !important;
+  color: #dc2626;
+  
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  
+  transition: color 0.2s ease;
+}
+
+.logo a:hover {
+  color: #b91c1c;
+}
+
+.logo h2 #heart{
+  color:red;
+}
+
+.logo h2 span{
+  color: red;
+}
+
+/* newsletter */
+
+.ll-footer__newsletter {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 26px 28px;
+}
+
+.ll-footer__heading {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+  font-size: 19px;
+  margin: 0 0 8px;
+}
+
+.ll-footer__sub {
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.55;
+  margin: 0 0 18px;
+}
+
+.ll-footer__field {
+  display: flex;
+  gap: 8px;
+}
+
+.ll-footer__field input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--paper);
+  transition: border-color 0.2s ease;
+}
+
+.ll-footer__field input::placeholder {
+  color: #A39C89;
+}
+
+.ll-footer__field input:focus {
+  outline: none;
+  border-color: var(--crimson);
+}
+
+.ll-footer__field button {
+  flex-shrink: 0;
+  background: var(--crimson);
+  color: var(--white);
+  border: 1.5px solid var(--crimson);
+  border-radius: 6px;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.ll-footer__field button:hover {
+  background: var(--crimson-deep);
+  border-color: var(--crimson-deep);
+}
+
+.ll-footer__field button:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.ll-footer__confirm {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--crimson);
+}
+
+/* ---------- link columns ---------- */
+
+.ll-footer__cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding: 44px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.ll-footer__col h4 {
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 0 0 16px;
+  font-weight: 600;
+}
+
+.ll-footer__col a {
+  display: block;
+  font-size: 14px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  margin-bottom: 11px;
+  transition: color 0.2s ease;
+}
+
+.ll-footer__col a:hover,
+.ll-footer__col a:focus-visible {
+  color: var(--crimson);
+}
+
+.ll-footer__col a:focus-visible {
+  outline: 2px solid var(--crimson);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------- bottom bar ---------- */
+
+.ll-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 22px;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.ll-footer__meta {
+  color: #A39C89;
+}
+
+/* ==========================================================
+   Responsive breakpoints
+   ========================================================== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .ll-footer__top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .ll-footer__tagline {
+    max-width: 100%;
+  }
+
+  .ll-footer__cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .ll-footer {
+    padding: 48px 0 24px;
+  }
+
+  .ll-footer__wrap {
+    padding: 0 20px;
+  }
+
+  .ll-footer__cols {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 20px;
+  }
+
+  .ll-footer__field {
+    flex-direction: column;
+  }
+
+  .ll-footer__field button {
+    padding: 11px 20px;
+  }
+
+  .ll-footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .ll-footer__cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .ll-footer * {
+    transition-duration: 0.001ms !important;
+  }
+}

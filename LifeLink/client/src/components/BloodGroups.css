@@ -1,0 +1,40 @@
+.blood-groups {
+  padding: 8px 8px 44px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 18px;
+}
+
+.blood-groups-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.blood-group-pill {
+  background: #fdf1f0;
+  color: #e0392b;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  min-width: 64px;
+  text-align: center;
+  cursor: default;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.blood-group-pill:hover {
+  background: #fbdedb;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .blood-group-pill {
+    flex: 1 1 calc(25% - 12px);
+  }
+}

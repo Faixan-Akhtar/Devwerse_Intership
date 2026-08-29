@@ -1,0 +1,95 @@
+/* * {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f4f4f4;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+} */
+
+
+/* # Global Layout CSS */
+
+/* Reset browser default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* padding:0 20px; */
+}
+
+/* Keep page content away from the edges */
+.hero,
+.stats,
+.blood-groups,
+.how-it-works{
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding:0px  40px 0 40px;
+
+}
+
+/* Better spacing on smaller screens */
+@media (max-width: 768px) {
+  .hero,
+  .stats,
+  .blood-groups,
+  .how-it-works {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
+  /* Increase left and right spacing */
+  padding: 80px 50px 60px;
+
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-media {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 24px;
+  }
+}
+
+

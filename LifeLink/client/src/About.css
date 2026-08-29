@@ -1,0 +1,212 @@
+.about {
+  --red: #dc2626;
+  --red-dark: #b91c1c;
+  --blush: #fdece9;
+  --blush-2: #fbdcd6;
+  --cream: #f3efe6;
+  --ink: #1b1b23;
+  --gray: #6b6b76;
+  --line: #ece7db;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+  color: var(--ink);
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 100px 24px;
+  box-sizing: border-box;
+}
+.about * { box-sizing: border-box; }
+
+.about-eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--red);
+  background: var(--blush);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.about-heading {
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 800;
+  margin: 0 0 20px;
+  letter-spacing: -0.01em;
+}
+.about-heading span { color: var(--red); }
+
+.about-copy {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--gray);
+  margin: 0 0 16px;
+}
+
+.about-cta {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+.btn {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 13px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { background: var(--red); color: #fff; }
+.btn-primary:hover { background: var(--red-dark); }
+.btn-outline { background: #fff; color: var(--ink); border-color: #e2ded2; }
+.btn-outline:hover { border-color: var(--red); color: var(--red); }
+
+/* Donor card mockup — the signature visual */
+.card-stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+}
+.deco-plus {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  opacity: 0.5;
+}
+.deco-plus::before, .deco-plus::after {
+  content: "";
+  position: absolute;
+  background: var(--blush-2);
+  border-radius: 3px;
+}
+.deco-plus::before { width: 100%; height: 6px; top: 8px; left: 0; }
+.deco-plus::after { width: 6px; height: 100%; left: 8px; top: 0; }
+.deco-plus.p1 { top: 6px; left: 8px; }
+.deco-plus.p2 { bottom: 18px; right: 0; }
+.deco-plus.p3 { bottom: -6px; left: 40px; width: 16px; height: 16px; }
+
+.donor-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 48px -20px rgba(27, 27, 35, 0.25);
+  transform: rotate(-3deg);
+  overflow: hidden;
+}
+.donor-card-top {
+  background: linear-gradient(135deg, var(--red) 0%, #8a1717 100%);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.donor-card-top span {
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.donor-card-body { padding: 22px 20px 24px; position: relative; }
+.donor-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin: 0 0 4px;
+}
+.donor-name { font-size: 19px; font-weight: 800; margin: 0 0 18px; }
+.donor-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.blood-badge {
+  background: var(--blush);
+  color: var(--red-dark);
+  font-weight: 800;
+  font-size: 20px;
+  padding: 6px 16px;
+  border-radius: 10px;
+}
+.donor-id { font-size: 12px; color: var(--gray); }
+.donor-bars { display: flex; gap: 3px; margin-top: 6px; }
+.donor-bars span { width: 3px; height: 14px; background: var(--line); border-radius: 1px; }
+.donor-bars span:nth-child(3n) { height: 18px; }
+.verified-pin {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 12px 6px 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #15803d;
+  box-shadow: 0 8px 20px -8px rgba(27, 27, 35, 0.3);
+}
+
+/* Value grid */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 84px;
+}
+.value-card {
+  background: var(--cream);
+  border-radius: 16px;
+  padding: 28px 22px;
+  transition: transform 0.18s ease;
+}
+.value-card:hover { transform: translateY(-4px); }
+.value-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--blush);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.value-icon svg { color: var(--red); width: 22px; height: 22px; }
+.value-title { font-size: 16px; font-weight: 700; margin: 0 0 8px; }
+.value-text { font-size: 14px; line-height: 1.6; color: var(--gray); margin: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn, .value-card { transition: none; }
+}
+
+@media (max-width: 860px) {
+  .about { padding: 64px 20px; }
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .about-heading { font-size: 32px; }
+  .card-stage { min-height: 280px; order: -1; }
+  .values-grid { grid-template-columns: 1fr 1fr; margin-top: 56px; }
+}
+@media (max-width: 480px) {
+  .values-grid { grid-template-columns: 1fr; }
+  .about-cta { flex-direction: column; }
+  .btn { text-align: center; }
+}

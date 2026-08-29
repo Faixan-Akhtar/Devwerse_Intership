@@ -1,0 +1,620 @@
+* {
+  box-sizing: border-box;
+}
+
+.rb-page {
+  min-height: calc(100vh - 70px);
+  background: #f8f9fb;
+  padding: 35px 5%;
+  color: #171717;
+}
+
+/* Back */
+
+.rb-back-link {
+  border: none;
+  background: transparent;
+  color: #d92d20;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.rb-back-link:hover {
+  text-decoration: underline;
+}
+
+/* Heading */
+
+.rb-heading {
+  margin-bottom: 28px;
+}
+
+.rb-heading h1 {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.rb-heading h1 span {
+  font-size: 34px;
+}
+
+.rb-heading p {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+/* Main */
+
+.rb-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.5fr;
+  gap: 25px;
+  align-items: stretch;
+}
+
+/* Card */
+
+.rb-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* Card heading */
+
+.rb-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 25px;
+  background: #fff3f3;
+  border-bottom: 1px solid #f3dddd;
+}
+
+.rb-card-heading h2 {
+  margin: 0;
+  font-size: 19px;
+  color: #111827;
+}
+
+.rb-heading-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffe0e0;
+  font-size: 19px;
+}
+
+/* Donor */
+
+.rb-donor-card {
+  padding-bottom: 25px;
+}
+
+.rb-donor-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 28px 25px 20px;
+}
+
+.rb-avatar {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background: #f1a5a5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 800;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.rb-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rb-donor-main {
+  min-width: 0;
+}
+
+.rb-name-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rb-name-status h2 {
+  margin: 0;
+  font-size: 23px;
+  color: #111827;
+}
+
+.rb-status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rb-status.available {
+  color: #15803d;
+  background: #dcfce7;
+}
+
+.rb-status.unavailable {
+  color: #b91c1c;
+  background: #fee2e2;
+}
+
+.rb-blood,
+.rb-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4b5563;
+  margin: 12px 0 0;
+  font-size: 15px;
+}
+
+.rb-blood strong {
+  color: #b42318;
+}
+
+.rb-blood-icon {
+  color: #e02d25;
+  font-size: 18px;
+}
+
+.rb-icon {
+  width: 25px;
+  color: #dc2626;
+  font-size: 18px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.rb-divider {
+  height: 1px;
+  background: #eeeeee;
+  margin: 0 25px;
+}
+
+/* Contact */
+
+.rb-contact-list {
+  padding: 10px 25px 0;
+}
+
+.rb-contact-row {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 10px;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.rb-contact-row:last-child {
+  border-bottom: none;
+}
+
+.rb-contact-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rb-contact-row span {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.rb-contact-row strong {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+/* Form */
+
+.rb-request-card {
+  padding-bottom: 25px;
+}
+
+.rb-request-card form {
+  padding: 25px;
+}
+
+.rb-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.rb-field {
+  margin-bottom: 20px;
+}
+
+.rb-field label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.rb-field label span {
+  color: #dc2626;
+  margin-left: 3px;
+}
+
+.rb-field label small {
+  color: #9ca3af;
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+.rb-field input,
+.rb-field select,
+.rb-field textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  padding: 13px 14px;
+  font-size: 15px;
+  color: #111827;
+  background: #ffffff;
+  outline: none;
+  font-family: inherit;
+  transition: 0.2s;
+}
+
+.rb-field input:focus,
+.rb-field select:focus,
+.rb-field textarea:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.08);
+}
+
+.rb-field textarea {
+  resize: vertical;
+  min-height: 115px;
+}
+
+.rb-readonly-input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  padding: 13px 14px;
+  font-size: 15px;
+  background: #f9fafb;
+  color: #374151;
+}
+
+/* Button */
+
+.rb-submit-btn {
+  width: 100%;
+  border: none;
+  border-radius: 9px;
+  background: #dc2626;
+  color: white;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.rb-submit-btn:hover {
+  background: #b91c1c;
+  transform: translateY(-1px);
+}
+
+.rb-submit-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Alerts */
+
+.rb-alert {
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.rb-alert-error {
+  color: #991b1b;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+}
+
+.rb-alert-success {
+  color: #166534;
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+}
+
+.rb-unavailable-message {
+  text-align: center;
+  color: #b91c1c;
+  font-size: 13px;
+  margin: 10px 0 0;
+}
+
+/* Safety */
+
+.rb-safe-card {
+  margin-top: 25px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.rb-safe-main {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.rb-safe-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: #ffe1e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  flex-shrink: 0;
+}
+
+.rb-safe-main h3 {
+  margin: 0 0 5px;
+  font-size: 17px;
+}
+
+.rb-safe-main p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+  max-width: 420px;
+}
+
+.rb-safe-items {
+  display: flex;
+  gap: 30px;
+}
+
+.rb-safe-items div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rb-safe-items strong {
+  font-size: 14px;
+}
+
+.rb-safe-items span {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+/* Footer */
+
+.rb-footer {
+  text-align: center;
+  padding: 28px 0 10px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Loading */
+
+.rb-loading {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rb-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #fee2e2;
+  border-top-color: #dc2626;
+  border-radius: 50%;
+  animation: rb-spin 0.8s linear infinite;
+}
+
+.rb-loading p {
+  color: #6b7280;
+}
+
+@keyframes rb-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error */
+
+.rb-error-page {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fb;
+}
+
+.rb-error-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.rb-error-card h2 {
+  color: #b91c1c;
+}
+
+.rb-error-card p {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.rb-back-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ========TABLET======== */
+
+@media (max-width: 1000px) {
+
+  .rb-page {
+    padding: 30px 4%;
+  }
+
+  .rb-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rb-safe-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rb-safe-items {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* =======MOBILE======*/
+
+@media (max-width: 650px) {
+
+  .rb-page {
+    padding: 22px 15px;
+  }
+
+  .rb-heading h1 {
+    font-size: 29px;
+  }
+
+  .rb-heading p {
+    font-size: 14px;
+  }
+
+  .rb-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .rb-donor-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .rb-avatar {
+    width: 85px;
+    height: 85px;
+    font-size: 25px;
+  }
+
+  .rb-name-status h2 {
+    font-size: 20px;
+  }
+
+  .rb-card-heading {
+    padding: 16px;
+  }
+
+  .rb-request-card form {
+    padding: 18px;
+  }
+
+  .rb-donor-header {
+    padding: 22px 18px;
+  }
+
+  .rb-contact-list {
+    padding: 10px 18px;
+  }
+
+  .rb-divider {
+    margin: 0 18px;
+  }
+
+  .rb-safe-card {
+    padding: 18px;
+  }
+
+  .rb-safe-items {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .rb-safe-items div {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+  }
+}
+
+/* Small phone */
+
+@media (max-width: 400px) {
+
+  .rb-heading h1 {
+    font-size: 25px;
+  }
+
+  .rb-card-heading h2 {
+    font-size: 17px;
+  }
+
+  .rb-name-status {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .rb-submit-btn {
+    font-size: 14px;
+  }
+}
